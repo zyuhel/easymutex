@@ -1,6 +1,6 @@
 <?php
 namespace EasyMutex; 
-class FlockMutex implements iMutex
+class FlockMutex implements MutexInterface
 {
     private static $locks=[];
     static function checkMutex($key)

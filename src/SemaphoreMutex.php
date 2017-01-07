@@ -1,6 +1,6 @@
 <?php
 namespace EasyMutex; 
-class SemaphoreMutex implements iMutex
+class SemaphoreMutex implements MutexInterface
 {
     private static $locks=[];
     static function ftokFromKey($key)

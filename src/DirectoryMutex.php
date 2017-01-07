@@ -1,6 +1,6 @@
 <?php
 namespace EasyMutex; 
-class DirectoryMutex implements iMutex
+class DirectoryMutex implements MutexInterface
 {
     private static $locks=[];
     static function checkMutex($key)
